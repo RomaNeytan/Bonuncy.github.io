@@ -1,0 +1,53 @@
+.header{
+    padding-top: 35px;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 1000;
+    &__logo{
+        font-size: 25px;
+        color:#ffffff;
+        text-transform: uppercase;
+        @include John();
+    }
+    &-menu{
+        &-list{
+            &__item{
+                & + &{
+                    margin-left:25px;
+                }
+            }
+            &__link{
+                font-size: 16px;
+                color:#fff;
+                transition: color .2s linear;
+
+                &:hover{
+                    text-decoration:none;
+                    color:#19bd9a;
+                }
+                &_hello{
+                    display: inline-block;
+                    height: 30px;
+                    background: none;
+                    border:1px solid #fff;
+                    border-radius:25px;
+                    padding: 0 20px;
+                    transition: all .2s linear;
+
+                    &:hover{
+                        color:#6af725;
+                        border-color:#143730;
+                        background: #143730;
+                    }
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}

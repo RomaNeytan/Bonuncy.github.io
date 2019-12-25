@@ -1,15 +1,22 @@
 @import "vars.scss";
+@import "fonts.scss";
 @import "mixin.scss";
 
 body{
     margin: 0;
-
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
 }
 
 *,
 *:before,
 *::after{
     box-sizing: border-box;
+}
+
+p{
+    margin:0 0 4px;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -29,5 +36,5 @@ ul,li{
 
 // Blocks
 
-
-    
+@import "blocks/header";
+@import "blocks/intro";

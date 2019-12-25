@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "BIG JOHN";
+  src: url("../fonts/BIG JOHN.otf") format("otf"); }
+
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url("../fonts/SourceSansPro-Regular.otf") format("otf"); }
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; }
+
+*,
+*:before,
+*::after {
+  box-sizing: border-box; }
+
+p {
+  margin: 0 0 4px; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.header {
+  padding-top: 35px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; }
+  .header__logo {
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "BIG JOHN"; }
+  .header-menu-list__item + .header-menu-list__item {
+    margin-left: 25px; }
+  .header-menu-list__link {
+    font-size: 16px;
+    color: #fff;
+    transition: color .2s linear; }
+    .header-menu-list__link:hover {
+      text-decoration: none;
+      color: #19bd9a; }
+    .header-menu-list__link_hello {
+      display: inline-block;
+      height: 30px;
+      background: none;
+      border: 1px solid #fff;
+      border-radius: 25px;
+      padding: 0 20px;
+      transition: all .2s linear; }
+      .header-menu-list__link_hello:hover {
+        color: #6af725;
+        border-color: #143730;
+        background: #143730; }
+      .header-menu-list__link_hello:focus {
+        outline: none; }
+
+.intro {
+  height: 100vh;
+  background: url("../../images/intro/intro-bg.jpg") no-repeat center;
+  background-size: cover; }
+  .intro-content {
+    text-align: center;
+    padding-top: 250px;
+    width: 100%;
+    max-width: 670px;
+    margin: 0 auto; }
+    .intro-content__title {
+      font-size: 35px;
+      font-weight: 300;
+      color: #fff;
+      font-family: "SourceSansPro-Regular";
+      margin-bottom: 20px;
+      line-height: 50px;
+      text-transform: uppercase;
+      letter-spacing: 10px; }
+    .intro-content__text {
+      font-size: 16px;
+      color: #ffffff;
+      line-height: 28px; }
+  .intro__arrow {
+    text-align: center;
+    padding-top: 150px; }
+  .intro__iccon {
+    color: #fff;
+    transition: all .2s linear; }
+    .intro__iccon:hover {
+      color: #fff;
+      background: #19bd9a;
+      padding: 17px;
+      border-radius: 50%; }
