@@ -1,0 +1,16 @@
+.section-header{
+    text-align: center;
+    &__title{
+        font-size: 20px;
+        color:#333b46;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        letter-spacing: 5px;
+        @include Pro();
+    }
+    &__text{
+        font-size: 14px;
+        color:$main-color;
+        line-height: 25px;
+    }
+}

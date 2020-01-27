@@ -34,7 +34,18 @@ ul,li{
     list-style: none;
 }
 
+// Ibg
+
+@import "ibg.scss";
+
+// Section-header
+
+@import "section__header.scss";
+
 // Blocks
 
 @import "blocks/header";
 @import "blocks/intro";
+@import "blocks/about";
+@import "blocks/details";
+@import "blocks/projects";
