@@ -1,0 +1,14 @@
+.btn-about{
+    @include Main-btn();
+    border: 1px solid #000;
+    color:#333b46;
+}
+
+.btn-main{
+    @include Main-btn();
+    border: 1px solid rgb(240, 224, 224);
+    color:#fff;
+    &:hover{
+        text-decoration: none;
+    }
+}

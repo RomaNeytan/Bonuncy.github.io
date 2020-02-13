@@ -34,6 +34,10 @@ ul,li{
     list-style: none;
 }
 
+.block-main{
+    overflow: hidden;
+}
+
 // Ibg
 
 @import "ibg.scss";
@@ -42,6 +46,10 @@ ul,li{
 
 @import "section__header.scss";
 
+// Btn
+
+@import "btn.scss";
+
 // Blocks
 
 @import "blocks/header";
@@ -49,3 +57,10 @@ ul,li{
 @import "blocks/about";
 @import "blocks/details";
 @import "blocks/projects";
+@import "blocks/services";
+@import "blocks/team";
+@import "blocks/portfolio";
+@import "blocks/command";
+@import "blocks/team_contacts";
+@import "blocks/reviews";
+@import "blocks/news";

@@ -5,3 +5,25 @@
 @mixin Pro() {
     font-family: "SourceSansPro-Regular";
 }
+
+@mixin Robo(){
+    font-family: 'Roboto', sans-serif;
+}
+
+// Btn
+
+@mixin Main-btn(){
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 7px 25px;
+    transition: all .2s linear;
+
+    &:hover{
+        background: #4a4f21;
+        border-color:#4a4f21;
+        color:#33f3cc;
+    }
+}

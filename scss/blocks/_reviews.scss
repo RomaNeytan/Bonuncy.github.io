@@ -1,0 +1,35 @@
+.reviews{
+    background:#f3f3f3;
+    padding: 70px 0 90px;
+    &__slider{
+        margin-top: 50px;
+        width: 100%;
+        background: #fff;
+        padding: 55px 0;
+    }
+    &-item{
+        &__img{
+
+        }
+        &-content{
+            padding-left: 45px;
+            &__description{
+                font-size: 16px;
+                color:#81868e;
+                line-height: 28px;
+            }
+            &__name{
+                margin-top: 20px;
+                font-size: 16px;
+                color:#19bd9a;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            &__prof{
+                font-size: 14px;
+                color:#464646;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
