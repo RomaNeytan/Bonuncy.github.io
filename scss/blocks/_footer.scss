@@ -1,0 +1,57 @@
+.footer{
+    padding: 75px 0 85px;
+    background: #f3f3f3;
+    text-align: center;
+    &__title{
+        font-size: 25px;
+        color:#323a45;
+        @include John();
+        margin-bottom: 15px;
+    }   
+    &__copy{
+        font-size: 14px;
+        color:#81868e;
+        margin-bottom: 35px;
+    } 
+    &-social{
+        &__item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            background: #3b5998;
+            border-radius: 50%;
+            transition: background .2s linear;
+            & + &{
+                margin-left: 9px;
+            }
+            &:hover{
+                background: #55983b;
+            }
+            &_2{
+                background: #26a6d1;
+            }
+            &_3{
+                background: #0e76a8;
+            }
+            &_4{
+                background: #3f729b;
+            }
+            &_5{
+                background: #86c9ef;
+            }
+        }
+        &__link{
+            width: 20px;
+            height: 17px;
+            fill:#fff;
+            transition: fill .2s linear;
+
+            &:hover{
+                fill:#000;
+            }
+        }
+    }
+}
