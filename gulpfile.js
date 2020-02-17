@@ -3,7 +3,8 @@ const sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 let cleanCSS = require('gulp-clean-css');
-
+var imagemin     = require('gulp-imagemin'),
+    imgCompress  = require('imagemin-jpeg-recompress');
 
 
 function style(){
@@ -36,6 +37,22 @@ gulp.task('minify', () => {
         console.log(`${details.name}: ${details.stats.minifiedSize}`);
       }))
     .pipe(gulp.dest('css/'));
+  });
+
+  gulp.task('img', function() {
+    return gulp.src('images/**/*')
+    .pipe(imagemin([
+      imgCompress({
+        loops: 4,
+        min: 70,
+        max: 80,
+        quality: 'high'
+      }),
+      imagemin.gifsicle(),
+      imagemin.optipng(),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest('dist/images'));
   });
 
 exports.style = style;
