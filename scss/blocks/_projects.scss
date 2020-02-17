@@ -122,4 +122,14 @@
             }
         }
     }
+    @media (min-width:$screen-md){
+    }
+    
+    @media (max-width:$screen-sm-max){
+        &-footer{
+            &__btn{
+                margin-top: 15px;
+            }
+        }
+    }
 }

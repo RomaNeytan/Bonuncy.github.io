@@ -2,31 +2,30 @@
     height: 100vh;
     background: url("../../images/intro/intro-bg.jpg") no-repeat center;
     background-size: cover;
+    min-height: 575px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 250px;
     &-content{
         text-align: center;
-        padding-top: 250px;
         width: 100%;
         max-width:670px;
         margin: 0 auto;
         &__title{
-            font-size: 35px;
             font-weight: 300;
             color:#fff;
             @include Pro();
             margin-bottom: 20px;
             line-height: 50px;
             text-transform: uppercase;
-            letter-spacing: 10px;
         }
         &__text{
-            font-size: 16px;
             color:#ffffff;
             line-height: 28px;
         }
     }
     &__arrow{
         text-align: center;
-        padding-top: 150px;
     }
     &__iccon{
         color:#fff;
@@ -37,5 +36,52 @@
             padding: 12px 15px;
             border-radius: 50%;
         }
+    }
+
+    @media (min-width:1101px){
+        &__arrow{
+            padding-top: 110px;
+        }
+    }
+
+    @media (max-width:1100px){
+        &__arrow{
+            padding-top: 70px;
+        }
+    }
+
+    @media (min-width:$screen-sm){
+        &-content{
+            &__title{
+                font-size: 35px;
+                letter-spacing: 10px;
+            }
+            &__text{
+                font-size: 16px;
+            }
+        }
+    }
+    
+    @media (max-width:$screen-xs-max){
+        &-content{
+            &__title{
+                font-size: 25px;
+                letter-spacing: 3px;
+            }
+            &__text{
+                font-size: 14px;
+            }
+        }
+
+        &__arrow{
+            padding-top: 80px;
+        }
+    }
+    
+    @media (max-width: 1024px) and (min-height: 1366px) {
+        padding-top: 450px;
+    }
+    @media (max-width: 1366px) and (min-height: 1024px) {
+        padding-top: 450px;
     }
 }

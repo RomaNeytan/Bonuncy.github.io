@@ -4,12 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name = "description" content = "WE ARE CODE CAFE">
+<meta name = "keywords" content = "PROJECTS,SERVICES,Graphic Design,TEAM,Marketing,Developers"> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
 <!-- GoogleFonts -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 <!-- Main css -->
 <link rel="stylesheet" href="css/style.css">
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+<link rel="manifest" href="images/favicon/site.webmanifest">
+<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!-- Slick -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <title>Bouncy</title>
 </head>
 <body>
@@ -142,33 +154,36 @@
 
     <div class="block-main">
     <!-- Header -->
-    <header class="header">
+    <header class="header" id = "header">
         <div class="container">
             <div class="row d-md-flex flex-nowrap justify-content-between align-items-center">
-                <div class="col-md-2">
+                <div class="col-lg-2">
                     <div class="header__logo">
                         Bouncy
                     </div>
                 </div>
-                <div class="col-md-6 d-flex justify-content-end">
-                    <nav class = "header-menu">
+                <div class="d-flex justify-content-end">
+                    <nav class = "header-menu" id = "nav">
                         <ul class="header-menu-list d-flex align-items-center">
-                            <li class="header-menu-list__item"><button href="#" class="header-menu-list__link header-menu-list__link_hello">Hello</button></li>
-                            <li class="header-menu-list__item"><a href="#" class="header-menu-list__link">About</a></li>
-                            <li class="header-menu-list__item"><a href="#" class="header-menu-list__link">Services</a></li>
-                            <li class="header-menu-list__item"><a href="#" class="header-menu-list__link">Portfolio</a></li>
-                            <li class="header-menu-list__item"><a href="#" class="header-menu-list__link">Team</a></li>
-                            <li class="header-menu-list__item"><a href="#" class="header-menu-list__link">Blog</a></li>
-                            <li class="header-menu-list__item"><a href="#" class="header-menu-list__link">Contact</a></li>
+                            <li data-scroll = "#intro" class="header-menu-list__item"><button href="#" class="header-menu-list__link header-menu-list__link_hello">Hello</button></li>
+                            <li data-scroll = "#about" class="header-menu-list__item"><a href="#" class="header-menu-list__link">About</a></li>
+                            <li data-scroll = "#services" class="header-menu-list__item"><a href="#" class="header-menu-list__link">Services</a></li>
+                            <li data-scroll = "#portfolio" class="header-menu-list__item"><a href="#" class="header-menu-list__link">Portfolio</a></li>
+                            <li data-scroll = "#team" class="header-menu-list__item"><a href="#" class="header-menu-list__link">Team</a></li>
+                            <li data-scroll = "#blog" class="header-menu-list__item"><a href="#" class="header-menu-list__link">Blog</a></li>
+                            <li data-scroll = "#contact" class="header-menu-list__item"><a href="#" class="header-menu-list__link">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
+                <button class="nav-toggle" id = "nav-toggle">
+                    <span class="nav-toggle__item"></span>
+                </button>
             </div>
         </div>
     </header>
 
     <!-- Intro -->
-    <div class="intro d-flex flex-column ">
+    <div class="intro d-flex flex-column" id = "intro">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -192,18 +207,18 @@
     <!-- Main -->
     <main>
          <!-- About us -->
-        <section class="about">
+        <section class="about" id = "about">
             <div class="container">
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-md-5">
+                <div class="row d-flex justify-content-xl-center align-items-center">
+                    <div class="col-md-5 order-2 order-sm-2 order-md-1">
                         <h6 class="about__title">This is Bouncy</h6>
-                        <div class="about__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p></div>
+                        <div class="about__text"><p>At veo eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p></div>
 
                         <div class="about__btn">
                             <a href="#" class="btn btn-about">Read More</a>
                         </div>
                     </div>
-                    <div class="col-md-2 offset-2">
+                    <div class="col-md-2 offset-xl-2 offset-md-2 order-1 order-sm-1 order-md-2">
                         <div class="about__img">
                             <a href="#"><img src="images/about/ipad.jpg" alt="Ipad"></a>
                         </div>
@@ -252,7 +267,7 @@
                     <div class="col-md-4">
                         <div class="details__description"><p>At <span class="details__vero">vero</span> eos et accusamus et iusto odio dignissimos <span class="details__ducimus">ducimus</span> qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p></div>
                     </div>
-                    <div class="col-md-6 offset-1">
+                    <div class="col-md-6 offset-md-1">
                         <div class="details__description">
                             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque <span class="details__ducimus">corrupti quos</span>dolores et quas molestias <span class="details__vero">excepturi</span> sint occaecati cupiditate non provident, <span class="details__ducimus">similique</span> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r</p>
                         </div>
@@ -324,7 +339,7 @@
             </div>
         </section>
         <!-- Services -->
-        <section class="services">
+        <section class="services" id = "services">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -335,9 +350,9 @@
                     </div>
                 </div>
                 <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <div class="row d-flex">
-                            <div class="col-md-1">
+                    <div class="col-lg-6">
+                        <div class="row d-flex flex-nowrap align-items-center align-items-md-center">
+                            <div class="col-1 col-sm-1 col-md-1">
                                 <div class="services-iccons">
                                     <a href="#" class="services-iccons__item">
                                         <svg class = "services-iccons__link">
@@ -361,7 +376,7 @@
                                     </a>   
                                 </div>
                             </div>
-                            <div class="col-md-9 offset-1">
+                            <div class="col-10 col-sm-10 col-md-9 offset-1 offset-md-1 offset-sm-1">
                                 <div class="services-content">
                                     <h6 class="services-content__title">Graphic Design</h6>
                                     <div class="services-content__text"><p>At vero eos et accusamus et <span class="details__vero">iusto</span> odio dignissimos<br> <span class="details__ducimus">ducimus</span> qui blanditiis praesentium voluptatum <br> deleniti</p></div>
@@ -370,25 +385,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="services-item">
-                                    <span>80%</span>
+                    <div class="col-lg-6">
+                        <div class="services__inner">
+                            <div class="row flex-nowrap services__row">
+                                <div class="col-lg-4">
+                                    <div class="services-item">
+                                        <span>80%</span>
+                                    </div>
+                                    <h6 class="services-item__title">Branding</h6>
                                 </div>
-                                <h6 class="services-item__title">Branding</h6>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="services-item">
-                                    <span>75%</span>
+                                <div class="col-lg-4">
+                                    <div class="services-item services-item_second">
+                                        <span>75%</span>
+                                    </div>
+                                    <h6 class="services-item__title">Web Design</h6>
                                 </div>
-                                <h6 class="services-item__title">Web Design</h6>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="services-item">
-                                    <span>60%</span>
+                                <div class="col-lg-4">
+                                    <div class="services-item services-item_three">
+                                        <span>60%</span>
+                                    </div>
+                                    <h6 class="services-item__title">UI/UX</h6>
                                 </div>
-                                <h6 class="services-item__title">UI/UX</h6>
                             </div>
                         </div>
                     </div>
@@ -399,7 +416,7 @@
         <section class="team">
             <div class="container">
                 <div class="row d-flex justify-content-between">
-                    <div class="col-md-7">
+                    <div class="col-md-7 order-2 order-sm-2 order-lg-1 order-xl-1">
                         <div class="team-content">
                             <h6 class="team-content__title">Impressed ?</h6>
                             <div class="team-content__description"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</p></div>
@@ -407,7 +424,7 @@
                             <div class="team-content__work">Creatice Director, <span>Code Cafe</span></div>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 order-1 order-sm-1 order-lg-2 order-xl-2">
                         <div class="team__img">
                             <a href="#"><img src="images/team/team-ipad.png" alt="Ipad"></a>
                         </div>
@@ -416,7 +433,7 @@
             </div>
         </section>
         <!-- Portfolio -->
-        <section class="portfolio">
+        <section class="portfolio" id = "portfolio">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -428,215 +445,20 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="portfolio__buttons d-flex justify-content-center align-items-center">
-                            <button class="portfolio__btn">All Works</button>
-                            <button class="portfolio__btn">Print</button>
-                            <button class="portfolio__btn">Identity</button>
-                            <button class="portfolio__btn">Branding</button>
-                            <button class="portfolio__btn">Web</button>
-                            <button class="portfolio__btn">HTML</button>
-                            <button class="portfolio__btn">Wordpress</button>
+                        <div class="portfolio__buttons flex-wrap d-flex justify-content-center align-items-center">
+                            <button data-filter = "All" class="portfolio__btn">All Works</button>
+                            <button data-filter = "Print" class="portfolio__btn">Print</button>
+                            <button data-filter = "Identity" class="portfolio__btn">Identity</button>
+                            <button data-filter = "Branding" class="portfolio__btn">Branding</button>
+                            <button data-filter = "Web" class="portfolio__btn">Web</button>
+                            <button data-filter = "Html" class="portfolio__btn">HTML</button>
+                            <button data-filter = "Wordpress" class="portfolio__btn">Wordpress</button>
                         </div>
                     </div>
                 </div>          
-                <div class="row">
-                    <div class="col-md-3 pr-0">
-                        <div class="portfolio__item">
-                            <div class="portfolio__img">
-                                <a href="#"><img src="images/portfolio/1.jpg" alt=""></a>
-                            </div>
-                            <div class="portfolio__content">
-                                <h6 class="portfolio__title">TITLE HERE</h6>
-                                <div class="portfolio__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p></div>
-                                <div class="portfolio-social">
-                                    <a href = "#" class="portfolio-social__item">
-                                        <svg class = "portfolio-social__link">
-                                            <use xlink:href = "#link"></use>
-                                        </svg>
-                                    </a>
-                                    <a href = "#" class="portfolio-social__item">
-                                        <svg class = "portfolio-social__link">
-                                            <use xlink:href = "#like"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio__item">
-                            <div class="portfolio__img">
-                                <a href="#"><img src="images/portfolio/2.jpg" alt=""></a>
-                            </div>
-                            <div class="portfolio__content">
-                                <h6 class="portfolio__title">TITLE HERE</h6>
-                                <div class="portfolio__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p></div>
-                                <div class="portfolio-social">
-                                    <a href = "#" class="portfolio-social__item">
-                                        <svg class = "portfolio-social__link">
-                                            <use xlink:href = "#link"></use>
-                                        </svg>
-                                    </a>
-                                    <a href = "#" class="portfolio-social__item">
-                                        <svg class = "portfolio-social__link">
-                                            <use xlink:href = "#like"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio__item portfolio__item_small">
-                            <div class="portfolio__img">
-                                <a href="#"><img class = "portfolio__small" src="images/portfolio/3.jpg" alt=""></a>
-                            </div>
-                            <div class="portfolio__content">
-                                <h6 class="portfolio__title">TITLE HERE</h6>
-                                <div class="portfolio__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p></div>
-                                <div class="portfolio-social">
-                                    <a href = "#" class="portfolio-social__item">
-                                        <svg class = "portfolio-social__link">
-                                            <use xlink:href = "#link"></use>
-                                        </svg>
-                                    </a>
-                                    <a href = "#" class="portfolio-social__item">
-                                        <svg class = "portfolio-social__link">
-                                            <use xlink:href = "#like"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 pr-0">
-                        <div class="portfolio__item">
-                            <div class="portfolio__img">
-                                <a href="#"><img src="images/portfolio/4.jpg" alt=""></a>
-                            </div>
-                            <div class="portfolio__content">
-                                <h6 class="portfolio__title">TITLE HERE</h6>
-                                <div class="portfolio__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p></div>
-                                <div class="portfolio-social">
-                                    <a href = "#" class="portfolio-social__item">
-                                        <svg class = "portfolio-social__link">
-                                            <use xlink:href = "#link"></use>
-                                        </svg>
-                                    </a>
-                                    <a href = "#" class="portfolio-social__item">
-                                        <svg class = "portfolio-social__link">
-                                            <use xlink:href = "#like"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio__item">
-                            <div class="portfolio__img">
-                                <a href="#"><img src="images/portfolio/5.jpg" alt=""></a>
-                            </div>
-                            <div class="portfolio__content">
-                                <h6 class="portfolio__title">TITLE HERE</h6>
-                                <div class="portfolio__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p></div>
-                                <div class="portfolio-social">
-                                    <a href = "#" class="portfolio-social__item">
-                                        <svg class = "portfolio-social__link">
-                                            <use xlink:href = "#link"></use>
-                                        </svg>
-                                    </a>
-                                    <a href = "#" class="portfolio-social__item">
-                                        <svg class = "portfolio-social__link">
-                                            <use xlink:href = "#like"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio__item">
-                            <div class="portfolio__img">
-                                <a href="#"><img  src="images/portfolio/6.jpg" alt=""></a>
-                            </div>
-                            <div class="portfolio__content">
-                                <h6 class="portfolio__title">TITLE HERE</h6>
-                                <div class="portfolio__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p></div>
-                                <div class="portfolio-social">
-                                    <a href = "#" class="portfolio-social__item">
-                                        <svg class = "portfolio-social__link">
-                                            <use xlink:href = "#link"></use>
-                                        </svg>
-                                    </a>
-                                    <a href = "#" class="portfolio-social__item">
-                                        <svg class = "portfolio-social__link">
-                                            <use xlink:href = "#like"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 pr-0">
-                        <div class="portfolio__item">
-                            <div class="portfolio__img">
-                                <a href="#"><img src="images/portfolio/7.jpg" alt=""></a>
-                            </div>
-                            <div class="portfolio__content">
-                                <h6 class="portfolio__title">TITLE HERE</h6>
-                                <div class="portfolio__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p></div>
-                                <div class="portfolio-social">
-                                    <a href = "#" class="portfolio-social__item">
-                                        <svg class = "portfolio-social__link">
-                                            <use xlink:href = "#link"></use>
-                                        </svg>
-                                    </a>
-                                    <a href = "#" class="portfolio-social__item">
-                                        <svg class = "portfolio-social__link">
-                                            <use xlink:href = "#like"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio__item">
-                            <div class="portfolio__img">
-                                <a href="#"><img src="images/portfolio/8.jpg" alt=""></a>
-                            </div>
-                            <div class="portfolio__content">
-                                <h6 class="portfolio__title">TITLE HERE</h6>
-                                <div class="portfolio__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p></div>
-                                <div class="portfolio-social">
-                                    <a href = "#" class="portfolio-social__item">
-                                        <svg class = "portfolio-social__link">
-                                            <use xlink:href = "#link"></use>
-                                        </svg>
-                                    </a>
-                                    <a href = "#" class="portfolio-social__item">
-                                        <svg class = "portfolio-social__link">
-                                            <use xlink:href = "#like"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio__item">
-                            <div class="portfolio__img">
-                                <a href="#"><img class="portfolio_bsm" src="images/portfolio/9.jpg" alt=""></a>
-                            </div>
-                            <div class="portfolio__content">
-                                <h6 class="portfolio__title">TITLE HERE</h6>
-                                <div class="portfolio__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p></div>
-                                <div class="portfolio-social">
-                                    <a href = "#" class="portfolio-social__item">
-                                        <svg class = "portfolio-social__link">
-                                            <use xlink:href = "#link"></use>
-                                        </svg>
-                                    </a>
-                                    <a href = "#" class="portfolio-social__item">
-                                        <svg class = "portfolio-social__link">
-                                            <use xlink:href = "#like"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="portfolio__item">
+                <div class="row portfolio__row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="portfolio__item" data-cat = "Print">
                             <div class="portfolio__img">
                                 <a href="#"><img src="images/portfolio/10.jpg" alt=""></a>
                             </div>
@@ -657,9 +479,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio__item">
+                        <div class="portfolio__item" data-cat = "Identity">
                             <div class="portfolio__img">
-                                <a href="#"><img src="images/portfolio/11.jpg" alt=""></a>
+                                <a href="#"><img src="images/portfolio/10.jpg" alt=""></a>
                             </div>
                             <div class="portfolio__content">
                                 <h6 class="portfolio__title">TITLE HERE</h6>
@@ -678,9 +500,204 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio__item">
+                        <div class="portfolio__item" data-cat = "Branding">
                             <div class="portfolio__img">
-                                <a href="#"><img src="images/portfolio/12.jpg" alt=""></a>
+                                <a href="#"><img src="images/portfolio/10.jpg" alt=""></a>
+                            </div>
+                            <div class="portfolio__content">
+                                <h6 class="portfolio__title">TITLE HERE</h6>
+                                <div class="portfolio__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p></div>
+                                <div class="portfolio-social">
+                                    <a href = "#" class="portfolio-social__item">
+                                        <svg class = "portfolio-social__link">
+                                            <use xlink:href = "#link"></use>
+                                        </svg>
+                                    </a>
+                                    <a href = "#" class="portfolio-social__item">
+                                        <svg class = "portfolio-social__link">
+                                            <use xlink:href = "#like"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="portfolio__item" data-cat = "Web">
+                            <div class="portfolio__img">
+                                <a href="#"><img src="images/portfolio/10.jpg" alt=""></a>
+                            </div>
+                            <div class="portfolio__content">
+                                <h6 class="portfolio__title">TITLE HERE</h6>
+                                <div class="portfolio__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p></div>
+                                <div class="portfolio-social">
+                                    <a href = "#" class="portfolio-social__item">
+                                        <svg class = "portfolio-social__link">
+                                            <use xlink:href = "#link"></use>
+                                        </svg>
+                                    </a>
+                                    <a href = "#" class="portfolio-social__item">
+                                        <svg class = "portfolio-social__link">
+                                            <use xlink:href = "#like"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__item" data-cat = "Html">
+                            <div class="portfolio__img">
+                                <a href="#"><img src="images/portfolio/10.jpg" alt=""></a>
+                            </div>
+                            <div class="portfolio__content">
+                                <h6 class="portfolio__title">TITLE HERE</h6>
+                                <div class="portfolio__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p></div>
+                                <div class="portfolio-social">
+                                    <a href = "#" class="portfolio-social__item">
+                                        <svg class = "portfolio-social__link">
+                                            <use xlink:href = "#link"></use>
+                                        </svg>
+                                    </a>
+                                    <a href = "#" class="portfolio-social__item">
+                                        <svg class = "portfolio-social__link">
+                                            <use xlink:href = "#like"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__item" data-cat = "Wordpress">
+                            <div class="portfolio__img">
+                                <a href="#"><img  src="images/portfolio/10.jpg" alt=""></a>
+                            </div>
+                            <div class="portfolio__content">
+                                <h6 class="portfolio__title">TITLE HERE</h6>
+                                <div class="portfolio__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p></div>
+                                <div class="portfolio-social">
+                                    <a href = "#" class="portfolio-social__item">
+                                        <svg class = "portfolio-social__link">
+                                            <use xlink:href = "#link"></use>
+                                        </svg>
+                                    </a>
+                                    <a href = "#" class="portfolio-social__item">
+                                        <svg class = "portfolio-social__link">
+                                            <use xlink:href = "#like"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="portfolio__item" data-cat = "Print">
+                            <div class="portfolio__img">
+                                <a href="#"><img src="images/portfolio/10.jpg" alt=""></a>
+                            </div>
+                            <div class="portfolio__content">
+                                <h6 class="portfolio__title">TITLE HERE</h6>
+                                <div class="portfolio__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p></div>
+                                <div class="portfolio-social">
+                                    <a href = "#" class="portfolio-social__item">
+                                        <svg class = "portfolio-social__link">
+                                            <use xlink:href = "#link"></use>
+                                        </svg>
+                                    </a>
+                                    <a href = "#" class="portfolio-social__item">
+                                        <svg class = "portfolio-social__link">
+                                            <use xlink:href = "#like"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__item" data-cat = "Wordpress">
+                            <div class="portfolio__img">
+                                <a href="#"><img src="images/portfolio/10.jpg" alt=""></a>
+                            </div>
+                            <div class="portfolio__content">
+                                <h6 class="portfolio__title">TITLE HERE</h6>
+                                <div class="portfolio__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p></div>
+                                <div class="portfolio-social">
+                                    <a href = "#" class="portfolio-social__item">
+                                        <svg class = "portfolio-social__link">
+                                            <use xlink:href = "#link"></use>
+                                        </svg>
+                                    </a>
+                                    <a href = "#" class="portfolio-social__item">
+                                        <svg class = "portfolio-social__link">
+                                            <use xlink:href = "#like"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__item" data-cat = "Html">
+                            <div class="portfolio__img">
+                                <a href="#"><img src="images/portfolio/10.jpg" alt=""></a>
+                            </div>
+                            <div class="portfolio__content">
+                                <h6 class="portfolio__title">TITLE HERE</h6>
+                                <div class="portfolio__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p></div>
+                                <div class="portfolio-social">
+                                    <a href = "#" class="portfolio-social__item">
+                                        <svg class = "portfolio-social__link">
+                                            <use xlink:href = "#link"></use>
+                                        </svg>
+                                    </a>
+                                    <a href = "#" class="portfolio-social__item">
+                                        <svg class = "portfolio-social__link">
+                                            <use xlink:href = "#like"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="portfolio__item" data-cat = "Identity">
+                            <div class="portfolio__img">
+                                <a href="#"><img src="images/portfolio/10.jpg" alt=""></a>
+                            </div>
+                            <div class="portfolio__content">
+                                <h6 class="portfolio__title">TITLE HERE</h6>
+                                <div class="portfolio__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p></div>
+                                <div class="portfolio-social">
+                                    <a href = "#" class="portfolio-social__item">
+                                        <svg class = "portfolio-social__link">
+                                            <use xlink:href = "#link"></use>
+                                        </svg>
+                                    </a>
+                                    <a href = "#" class="portfolio-social__item">
+                                        <svg class = "portfolio-social__link">
+                                            <use xlink:href = "#like"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__item" data-cat = "Print">
+                            <div class="portfolio__img">
+                                <a href="#"><img src="images/portfolio/10.jpg" alt=""></a>
+                            </div>
+                            <div class="portfolio__content">
+                                <h6 class="portfolio__title">TITLE HERE</h6>
+                                <div class="portfolio__text"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p></div>
+                                <div class="portfolio-social">
+                                    <a href = "#" class="portfolio-social__item">
+                                        <svg class = "portfolio-social__link">
+                                            <use xlink:href = "#link"></use>
+                                        </svg>
+                                    </a>
+                                    <a href = "#" class="portfolio-social__item">
+                                        <svg class = "portfolio-social__link">
+                                            <use xlink:href = "#like"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__item" data-cat = "Web">
+                            <div class="portfolio__img">
+                                <a href="#"><img src="images/portfolio/10.jpg" alt=""></a>
                             </div>
                             <div class="portfolio__content">
                                 <h6 class="portfolio__title">TITLE HERE</h6>
@@ -721,7 +738,7 @@
             </div>
         </section>
         <!-- Command -->
-        <section class="command">
+        <section class="command" id = "team">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -732,48 +749,136 @@
                     </div>
                 </div>
                 <div class="command__slider">
-                    <div class="command__item">
-                        <div class="row d-flex align-items-center">
-                            <div class="col-md-4">
-                                <div class="command__img">
-                                    <a href="#"><img src="images/command/1.jpg" alt="Abdullah Noman"></a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 offset-3">
-                                <div class="command__header text-right">
-                                    <div class="command__name">Abdullah Noman</div>
-                                    <div class="command__prof">Creative Director, Code Cafe</div>
-                                </div>
-                                <div class="command__description text-right">
-                                    <p>At vero eos et accusamus et iusto odio dignissimos<br> ducimus qui blanditiis praesentium</p>
-                                </div>
-                                <div class="command-skills">
-                                    <div class="command-skills__item">
-                                        <div class="command-skills__header d-flex justify-content-between">
-                                            <div class="command-skills__title">BRANDING</div>
-                                            <div class="command-skills__percent">80 %</div>
-                                        </div>
-                                        <span class="command-skills__row"></span>
+                    <div>
+                        <div class="command__item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-4">
+                                    <div class="command__img">
+                                        <a href="#"><img src="images/command/1.jpg" alt="Abdullah Noman"></a>
                                     </div>
-                                    <div class="command-skills__item">
-                                        <div class="command-skills__header d-flex justify-content-between">
-                                            <div class="command-skills__title">Web Design</div>
-                                            <div class="command-skills__percent">65 %</div>
-                                        </div>
-                                        <span class="command-skills__row command-skills__row_low"></span>
+                                </div>
+                                <div class="col-md-4 offset-md-3">
+                                    <div class="command__header text-right">
+                                        <div class="command__name">Abdullah Noman</div>
+                                        <div class="command__prof">Creative Director, Code Cafe</div>
                                     </div>
-                                    <div class="command-skills__item">
-                                        <div class="command-skills__header d-flex justify-content-between">
-                                            <div class="command-skills__title">User Interface</div>
-                                            <div class="command-skills__percent">75 %</div>
+                                    <div class="command__description text-right">
+                                        <p>At vero eos et accusamus et iusto odio dignissimos<br> ducimus qui blanditiis praesentium</p>
+                                    </div>
+                                    <div class="command-skills">
+                                        <div class="command-skills__item">
+                                            <div class="command-skills__header d-flex justify-content-between">
+                                                <div class="command-skills__title">BRANDING</div>
+                                                <div class="command-skills__percent">80 %</div>
+                                            </div>
+                                            <span class="command-skills__row"></span>
                                         </div>
-                                        <span class="command-skills__row command-skills__row_average"></span>
+                                        <div class="command-skills__item">
+                                            <div class="command-skills__header d-flex justify-content-between">
+                                                <div class="command-skills__title">Web Design</div>
+                                                <div class="command-skills__percent">65 %</div>
+                                            </div>
+                                            <span class="command-skills__row command-skills__row_low"></span>
+                                        </div>
+                                        <div class="command-skills__item">
+                                            <div class="command-skills__header d-flex justify-content-between">
+                                                <div class="command-skills__title">User Interface</div>
+                                                <div class="command-skills__percent">75 %</div>
+                                            </div>
+                                            <span class="command-skills__row command-skills__row_average"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <div>
+                        <div class="command__item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-4">
+                                    <div class="command__img">
+                                        <a href="#"><img src="images/command/2.jpg" alt="Abdullah Noman"></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 offset-md-3">
+                                    <div class="command__header text-right">
+                                        <div class="command__name">Sasha Ney</div>
+                                        <div class="command__prof">Creative Director, Code Cafe</div>
+                                    </div>
+                                    <div class="command__description text-right">
+                                        <p>At vero eos et accusamus et iusto odio dignissimos<br> ducimus qui blanditiis praesentium</p>
+                                    </div>
+                                    <div class="command-skills">
+                                        <div class="command-skills__item">
+                                            <div class="command-skills__header d-flex justify-content-between">
+                                                <div class="command-skills__title">BRANDING</div>
+                                                <div class="command-skills__percent">80 %</div>
+                                            </div>
+                                            <span class="command-skills__row"></span>
+                                        </div>
+                                        <div class="command-skills__item">
+                                            <div class="command-skills__header d-flex justify-content-between">
+                                                <div class="command-skills__title">Web Design</div>
+                                                <div class="command-skills__percent">65 %</div>
+                                            </div>
+                                            <span class="command-skills__row command-skills__row_low"></span>
+                                        </div>
+                                        <div class="command-skills__item">
+                                            <div class="command-skills__header d-flex justify-content-between">
+                                                <div class="command-skills__title">User Interface</div>
+                                                <div class="command-skills__percent">75 %</div>
+                                            </div>
+                                            <span class="command-skills__row command-skills__row_average"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="command__item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-4">
+                                    <div class="command__img">
+                                        <a href="#"><img src="images/command/1.jpg" alt="Abdullah Noman"></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 offset-md-3">
+                                    <div class="command__header text-right">
+                                        <div class="command__name">Sasha Ney</div>
+                                        <div class="command__prof">Creative Director, Code Cafe</div>
+                                    </div>
+                                    <div class="command__description text-right">
+                                        <p>At vero eos et accusamus et iusto odio dignissimos<br> ducimus qui blanditiis praesentium</p>
+                                    </div>
+                                    <div class="command-skills">
+                                        <div class="command-skills__item">
+                                            <div class="command-skills__header d-flex justify-content-between">
+                                                <div class="command-skills__title">BRANDING</div>
+                                                <div class="command-skills__percent">80 %</div>
+                                            </div>
+                                            <span class="command-skills__row"></span>
+                                        </div>
+                                        <div class="command-skills__item">
+                                            <div class="command-skills__header d-flex justify-content-between">
+                                                <div class="command-skills__title">Web Design</div>
+                                                <div class="command-skills__percent">65 %</div>
+                                            </div>
+                                            <span class="command-skills__row command-skills__row_low"></span>
+                                        </div>
+                                        <div class="command-skills__item">
+                                            <div class="command-skills__header d-flex justify-content-between">
+                                                <div class="command-skills__title">User Interface</div>
+                                                <div class="command-skills__percent">75 %</div>
+                                            </div>
+                                            <span class="command-skills__row command-skills__row_average"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /slider -->
             </div>
         </section>
         <!-- Team-contats -->
@@ -805,16 +910,46 @@
                     </div>
                 </div>
                 <!-- Reviews-slider -->
-                <div class="reviews__slider d-flex justify-content-center">
-                    <div class="reviews-item d-flex">
-                        <div class="reviews-item__img">
-                            <a href="#"><img src="images/reviews/1.jpg" alt="PARTHO"></a>
+                <div class="reviews__slider">
+                    <div>
+                        <div class="reviews-item d-flex">
+                            <div class="reviews-item__img">
+                                <a href="#"><img src="images/reviews/1.jpg" alt="PARTHO"></a>
+                            </div>
+                            <div class="reviews-item-content">
+                                <div class="reviews-item-content__description">
+                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti<br> atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique<br> sunt in culpa qui officia deserunt mollitia.</p>
+                                    <div class="reviews-item-content__name">PARTHO</div>
+                                    <div class="reviews-item-content__prof">FOUNDER, ARTWAYS BD</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="reviews-item-content">
-                            <div class="reviews-item-content__description">
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti<br> atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique<br> sunt in culpa qui officia deserunt mollitia.</p>
-                                <div class="reviews-item-content__name">PARTHO</div>
-                                <div class="reviews-item-content__prof">FOUNDER, ARTWAYS BD</div>
+                    </div>
+                    <div>
+                        <div class="reviews-item d-flex">
+                            <div class="reviews-item__img">
+                                <a href="#"><img src="images/reviews/1.jpg" alt="PARTHO"></a>
+                            </div>
+                            <div class="reviews-item-content">
+                                <div class="reviews-item-content__description">
+                                    <p>At vero eos et accusamus et iusto odio.</p>
+                                    <div class="reviews-item-content__name">PARTHO</div>
+                                    <div class="reviews-item-content__prof">FOUNDER, ARTWAYS BD</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="reviews-item d-flex">
+                            <div class="reviews-item__img">
+                                <a href="#"><img src="images/reviews/1.jpg" alt="PARTHO"></a>
+                            </div>
+                            <div class="reviews-item-content">
+                                <div class="reviews-item-content__description">
+                                    <p>At vero eos et accusamus et iusto odio dignissimos.</p>
+                                    <div class="reviews-item-content__name">PARTHO</div>
+                                    <div class="reviews-item-content__prof">FOUNDER, ARTWAYS BD</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -861,7 +996,7 @@
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4">
                         <div class="price-item">
                             <div class="price-item__header">
                                 <h6 class="price-item__title">PREMIUM</h6>
@@ -872,7 +1007,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4">
                         <div class="price-item">
                             <div class="price-item__content price-item__content_sm">
                                 <ul class="price-item-list">
@@ -889,7 +1024,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4">
                         <div class="price-item">
                             <div class="price-item__header">
                                 <h6 class="price-item__title">EXCLUSIVE</h6>
@@ -904,7 +1039,7 @@
             </div>
         </section>
         <!-- Subscribe -->
-        <section class="subscribe">
+        <section class="subscribe" id = "blog">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -926,7 +1061,7 @@
             </div>
         </section>
         <!-- Contact us -->
-        <section class="contacts">
+        <section class="contacts" id = "contact">
             <div class="contacts__header">
                     <div class="container">
                         <div class="row">
@@ -1118,9 +1253,11 @@
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/9614a3c154.js" crossorigin="anonymous"></script>
+    <!-- Slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src = "js/app.js"></script>
 </body>
 </html>

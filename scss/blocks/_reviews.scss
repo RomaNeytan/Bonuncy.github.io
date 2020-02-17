@@ -8,8 +8,9 @@
         padding: 55px 0;
     }
     &-item{
+        padding-left: 25px;
         &__img{
-
+            
         }
         &-content{
             padding-left: 45px;
@@ -29,6 +30,34 @@
                 font-size: 14px;
                 color:#464646;
                 text-transform: uppercase;
+            }
+        }
+    }
+
+    @media (max-width:$screen-md-max){
+        padding: 35px 0 45px;
+
+        &__slider{
+            margin-top: 25px;
+        }
+        &-item{
+            &__img{
+                padding-left: 20px;
+            }
+        }
+    }
+
+    @media (max-width:$screen-sm-max){
+        &-item{
+            padding-left: 0;
+        }
+    }
+
+    @media (max-width:$screen-xs-max){
+        &-item{
+            flex-direction: column;
+            &__img{
+                margin-bottom: 15px;
             }
         }
     }

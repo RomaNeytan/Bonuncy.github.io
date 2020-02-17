@@ -66,4 +66,36 @@
             color:#81868e;
         }
     }
+
+    
+    @media (max-width:$screen-md-max){
+        &__inner{
+            margin-top: 75px;
+        }
+    }
+
+    @media (max-width:$screen-sm-max){
+        padding: 35px 0 65px;
+    }
+
+    @media (max-width:420px){
+        &-content{
+            margin-left: 25px;
+        }
+        &__row{
+            display: flex;
+            flex-direction: column;
+        }
+        &-item{
+           &_second{
+                margin-top: 75px;
+           }
+           &_three{
+                margin-top: 75px;
+           }
+            &__title{
+                margin-top: 0;
+            }
+        }
+    }
 }

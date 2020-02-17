@@ -24,6 +24,10 @@ h1,h2,h3,h4,h5,h6{
     padding: 0;
 }
 
+.hide{
+    display: none;
+}
+
 a{
     text-decoration: none;
 }
@@ -49,6 +53,14 @@ ul,li{
 // Btn
 
 @import "btn.scss";
+
+// Slick-slider
+
+@import "slick-slider.scss";
+
+// Burger
+
+@import "burger.scss";
 
 // Blocks
 

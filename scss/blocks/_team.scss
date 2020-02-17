@@ -51,4 +51,36 @@
     &__img{
         margin-top: -165px;
     }
+
+    @media (max-width:$screen-lg-max){
+        &__img{
+            img{
+                max-width:100%;
+                height: auto;
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width:$screen-sm-max){
+        padding: 35px 0;
+        &__img{
+            margin-top: 0;
+
+            img{
+                max-width:none;
+            }
+        }
+        &__img{
+            margin-bottom: 25px;
+        }
+    }
+
+    @media (max-width:$screen-xs-max){
+        &__img{
+            img{
+                max-width:100%;
+            }
+        }
+    }
 }
